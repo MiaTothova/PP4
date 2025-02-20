@@ -3,5 +3,5 @@ from .views import Index
 
 
 urlpatterns = [
-    path('', Index.as_view(), name='booking')
+    path('', Index.as_view(), name='home')
 ]
