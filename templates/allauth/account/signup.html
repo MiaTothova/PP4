@@ -5,7 +5,31 @@
 {% block title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<div class="container text-center">
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="card shadow-lg p-4 w-50">
+    <h1 class="text-center">{% trans "Sign Up" %}</h1>
+
+    <p class="text-center">
+      {% blocktrans %}Already have an account? Then please 
+      <a href="{{ login_url }}" class="text-primary">sign in</a>.{% endblocktrans %}
+    </p>
+
+    <form class="form p-3" id="signup_form" method="post" action="{% url 'account_signup' %}">
+      {% csrf_token %}
+      <div class="mb-3">
+        {{ form|crispy }}
+      </div>
+      {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+      {% endif %}
+      
+      <button type="submit" class="btn btn-primary w-100 rounded-pill shadow-sm">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<!-- <div class="container text-center">
   <h1>{% trans "Sign Up" %}</h1>
 
   <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
@@ -18,5 +42,5 @@
     {% endif %}
     <button type="submit" class="btn btn-primary w-25">Sign Up</button>
   </form>
-</div>
+</div> -->
 {% endblock %}
