@@ -26,6 +26,10 @@
             <li class="nav-item">
                 <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}" href="/accounts/logout/">Logout</a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link {% if url_name == 'create' %}active{% endif %}" href="{% url 'create' %}">Book Now</a>
+              </li>
               {% else %}
               <li class="nav-item">
                 <a class="nav-link {% if url_name == 'accounts_signup' %}active{% endif %}" href="/accounts/signup/">Register</a>
