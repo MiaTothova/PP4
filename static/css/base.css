@@ -218,6 +218,11 @@ form {
 @media screen and (max-width: 768px) {
 
     /* navbar */
+
+    .navbar-brand {
+        font-size: 1.5em;
+    }
+
     .navbar-nav {
         margin-left: 0;
         text-align: center;
@@ -258,6 +263,11 @@ form {
 }
 
 @media screen and (max-width: 480px) {
+
+    .navbar-brand {
+        font-size: 1.2em;
+    }
+
     .menu h2 {
         font-size: 1.3em;
     }
@@ -276,6 +286,11 @@ form {
 }
 
 @media screen and (max-width: 375px) {
+
+    .navbar-brand {
+        font-size: 0.8em;
+    }
+
     .menu {
         width: 95%; 
         padding: 10px;
