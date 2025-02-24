@@ -28,7 +28,7 @@ body, html {
 
 .navbar-nav .nav-link.active {
     font-weight: bold;
-    border-bottom: 2px solid #8b0000; /* Underline effect */
+    border-bottom: 2px solid #8b0000;
 }
 
 /* Carousel */
@@ -44,6 +44,7 @@ body, html {
   }
   
 
+
 /* About Us Section */
 .about-us {
     width: 60%;
@@ -54,7 +55,7 @@ body, html {
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;
 }
 
 /* Paragraph Styling */
@@ -122,13 +123,9 @@ h2 {
     font-size: 1.2em;
 }
 
-/* Content wrapper pushes footer down */
 .wrapper {
     flex: 1;
-    /* display: flex;
-    flex-direction: column; */
 }
-
 
 footer {
     background-color: #070707;
@@ -139,7 +136,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* position: relative; */
     margin-top: auto;
 }
 
@@ -176,22 +172,26 @@ footer p {
     font-weight: 500;
 }
 
-/* Form */
+/* Forms */
 
-form {
-    background: #ffffff;
+/* signup */
+#signup-card {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card {
-    border-radius: 12px;
+#signup-form {
+    width: 100%;
+    padding: 20px;
 }
 
-.card h1 {
-    color: #8b0000; 
-    font-weight: bold;
+#signup-form input,
+#signup-form button {
+    width: 100%;
+    padding: 12px;
 }
 
 .btn-primary {
@@ -205,53 +205,35 @@ form {
     transition: 0.3s ease-in-out;
 }
 
-/* Booking Form */
-
-#booking-form h1 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #333; /* Darker color for contrast */
-}
-
-#booking-form {
+/* login */
+#login-card {
     max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f8f9fa; /* Light background */
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#booking-form label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-#booking-form input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-#booking-form button {
+#login-form {
+    width: 100%;
+    padding: 20px;
+}
+
+#login-form input,
+#login-form button {
     width: 100%;
     padding: 12px;
-    background-color: #8b0000;
-    color: white;
-    border: none;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
 }
 
-#booking-form button:hover {
-    background-color: #ff4500;
+/* booking */
+#booking-card {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive adjustments */
@@ -260,7 +242,7 @@ form {
     /* navbar */
 
     .navbar-brand {
-        font-size: 1.5em;
+        font-size: 1.5em !important;
     }
 
     .navbar-nav {
@@ -300,30 +282,17 @@ form {
     .menu-item span {
         font-size: 1em; 
     }
-}
 
-
-@media screen and (max-width: 600px) {
-    #booking-form {
-        width: 90%;
-        padding: 15px;
-    }
-
-    #booking-form input {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    #booking-form button {
-        font-size: 16px;
-        padding: 10px;
+    #signup-card {
+        width: 85%;
+        padding: 20px;
     }
 }
 
 @media screen and (max-width: 480px) {
 
     .navbar-brand {
-        font-size: 1.2em;
+        font-size: 1em !important;
     }
 
     .menu h2 {
@@ -340,6 +309,19 @@ form {
 
     .menu-item span {
         font-size: 0.95em;
+    }
+
+    #signup-card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #signup-form button {
+        font-size: 16px;
     }
 }
 

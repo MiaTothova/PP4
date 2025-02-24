@@ -6,7 +6,7 @@
 
 {% block content %}
 <div class="container d-flex justify-content-center align-items-center min-vh-100">
-  <div class="card shadow-lg p-4 w-50">
+  <div class="card shadow-lg p-4" id="login-card">
     <h1 class="text-center">{% trans "Sign In" %}</h1>
 
     <p class="text-center">
@@ -14,7 +14,7 @@
       <a href="{{ signup_url }}" class="text-primary">sign up</a>.{% endblocktrans %}
     </p>
 
-    <form class="form p-3" method="POST" action="{% url 'account_login' %}">
+    <form class="form p-3" id="login-form" method="POST" action="{% url 'account_login' %}">
       {% csrf_token %}
       <div class="mb-3">
         {{ form|crispy }}

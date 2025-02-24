@@ -1,26 +1,40 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    
-    <form id="booking-form" method="post">
-        {% csrf_token %}
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg p-4" id="booking-card">
+        <h1 class="text-center">Book a Table</h1>
         
-        <h1>Book a Table</h1>
-        <label for="id_name">Name:</label>
-        <input type="text" name="name" maxlength="100" required id="id_name" class="form-input">
+        <form id="booking-form" method="post">
+            {% csrf_token %}
 
-        <label for="id_email">Email:</label>
-        <input type="email" name="email" value="default@example.com" maxlength="254" required id="id_email" class="form-input">
+            <div class="mb-3">
+                <label for="id_name" class="form-label">Name:</label>
+                <input type="text" name="name" maxlength="100" required id="id_name" class="form-control">
+            </div>
 
-        <label for="id_date">Date:</label>
-        <input type="date" name="date" value="2025-02-24" required id="id_date" class="form-input">
+            <div class="mb-3">
+                <label for="id_email" class="form-label">Email:</label>
+                <input type="email" name="email" value="default@example.com" maxlength="254" required id="id_email" class="form-control">
+            </div>
 
-        <label for="id_time">Time:</label>
-        <input type="time" name="time" required id="id_time" class="form-input">
+            <div class="mb-3">
+                <label for="id_date" class="form-label">Date:</label>
+                <input type="date" name="date" value="2025-02-24" required id="id_date" class="form-control">
+            </div>
 
-        <label for="id_guests">Guests:</label>
-        <input type="number" name="guests" value="2" min="0" required id="id_guests" class="form-input">
+            <div class="mb-3">
+                <label for="id_time" class="form-label">Time:</label>
+                <input type="time" name="time" required id="id_time" class="form-control">
+            </div>
 
-        <button type="submit">Book</button>
-    </form>
+            <div class="mb-3">
+                <label for="id_guests" class="form-label">Guests:</label>
+                <input type="number" name="guests" value="2" min="0" required id="id_guests" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 rounded-pill shadow-sm">Book</button>
+        </form>
+    </div>
+</div>
 {% endblock %}
