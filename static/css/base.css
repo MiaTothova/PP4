@@ -44,7 +44,6 @@ body, html {
   }
   
 
-
 /* About Us Section */
 .about-us {
     width: 60%;
@@ -55,7 +54,7 @@ body, html {
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+    transition: all 0.3s ease-in-out; 
 }
 
 /* Paragraph Styling */
@@ -206,13 +205,54 @@ form {
     transition: 0.3s ease-in-out;
 }
 
-/* .form {
-    width: 100%;
-    margin: 3% auto;
-    box-shadow: var(--smal-box-shadow);
-    border-radius: 5px;
-} */
+/* Booking Form */
 
+#booking-form h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for contrast */
+}
+
+#booking-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#booking-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#booking-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#booking-form button:hover {
+    background-color: #ff4500;
+}
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
@@ -259,6 +299,24 @@ form {
 
     .menu-item span {
         font-size: 1em; 
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #booking-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #booking-form input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #booking-form button {
+        font-size: 16px;
+        padding: 10px;
     }
 }
 

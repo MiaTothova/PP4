@@ -1,55 +1,26 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
-    <h1>Book a table</h1>
-    <form method="post">
+    
+    <form id="booking-form" method="post">
         {% csrf_token %}
-        <p>
-            <label for="id_name">Name:</label>
-            <input type="text" name="name" maxlength="100" required id="id_name">
-            
-            
-          </p>
         
-          
-          <p>
-            <label for="id_email">Email:</label>
-            <input type="email" name="email" value="default@example.com" maxlength="254" required id="id_email">
-            
-            
-          </p>
-        
-          
-          <p>
-            <label for="id_date">Date:</label>
-            <input type="date" name="date" value="2025-02-24" required id="id_date"><input type="hidden" name="initial-date" value="2025-02-24 13:23:04+00:00" id="initial-id_date">
-            
-            
-          </p>
-    
-      
-      <p>
+        <h1>Book a Table</h1>
+        <label for="id_name">Name:</label>
+        <input type="text" name="name" maxlength="100" required id="id_name" class="form-input">
+
+        <label for="id_email">Email:</label>
+        <input type="email" name="email" value="default@example.com" maxlength="254" required id="id_email" class="form-input">
+
+        <label for="id_date">Date:</label>
+        <input type="date" name="date" value="2025-02-24" required id="id_date" class="form-input">
+
         <label for="id_time">Time:</label>
-        <input type="time" name="time" required id="id_time">
-        
-        
-      </p>
-    
-      
-      <p>
+        <input type="time" name="time" required id="id_time" class="form-input">
+
         <label for="id_guests">Guests:</label>
-        <input type="number" name="guests" value="2" min="0" required id="id_guests">
-        
-        
-          
-        
-      </p>
+        <input type="number" name="guests" value="2" min="0" required id="id_guests" class="form-input">
 
         <button type="submit">Book</button>
     </form>
-
-
-    
-
-{% endblock %}SS
+{% endblock %}
