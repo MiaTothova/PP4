@@ -34,5 +34,5 @@ class Create(TemplateView):
 
 @login_required
 def view_bookings(request):
-    booking = Booking.objects.filter(user=request.user).order_by('-date')
-    return render(request, 'booking/view_booking.html', {'booking': booking})
+    bookings = Booking.objects.filter(user=request.user).order_by('-date')
+    return render(request, 'booking/view_booking.html', {'bookings': bookings})
