@@ -4,18 +4,38 @@
 
 {% block content %}
 
-<h2>My Bookings</h2>
+<div class="container py-5">
+  <h2 class="text-center mb-4">My Bookings</h2>
 
-{% for booking in bookings %}
-  <div>
-    <p><strong>Name:</strong> {{ booking.name }}</p>
-    <p><strong>Email:</strong> {{ booking.email }}</p>
-    <p><strong>Date:</strong> {{ booking.date }}</p>
-    <p><strong>Time:</strong> {{ booking.time }}</p>
-    <p><strong>Guests:</strong> {{ booking.guests }}</p>
-  </div>
-{% empty %}
-  <p>You have no bookings yet.</p>
-{% endfor %}
-
+{% if bookings %}
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            {% for booking in bookings %}
+                <div class="col">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ booking.date }} at {{ booking.time }}</h5>
+                            <p class="card-text">
+                                <strong>Name:</strong> {{ booking.name }}<br>
+                                <strong>Email:</strong> {{ booking.email }}<br>
+                                <strong>Guests:</strong> {{ booking.guests }}
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent d-flex justify-content-between">
+                            <a href="" class="btn btn-sm btn-outline-primary">
+                                Edit
+                            </a>
+                            <a href="" class="btn btn-sm btn-outline-danger">
+                                Cancel
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="alert alert-info text-center" role="alert">
+            You have no bookings yet.
+        </div>
+    {% endif %}
+</div>
 {% endblock %}
