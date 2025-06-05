@@ -36,3 +36,18 @@ class Create(TemplateView):
 def view_bookings(request):
     bookings = Booking.objects.filter(user=request.user).order_by('-date')
     return render(request, 'booking/view_booking.html', {'bookings': bookings})
+
+
+@login_required
+def edit_booking(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id, user=request.user)
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your booking has been updated!')
+            return redirect('view_bookings')
+    else:
+        form = BookingForm(instance=booking)
+
+    return render(request, 'booking/edit_booking.html', {'form': form, 'booking': booking})
