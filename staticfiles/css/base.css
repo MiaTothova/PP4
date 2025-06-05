@@ -3,8 +3,6 @@
 body, html {
     font-family: 'Poppins', sans-serif;
     height: 100%;
-    /* margin: 0; */
-    /* padding: 0; */
     display: flex;
     flex-direction: column;
     background-color: #f7d9bf;
@@ -68,10 +66,6 @@ body, html {
     padding: 10px;
 }
 
-
-
-
-
 /* Menu Items */
 h1 {
     margin: 0;
@@ -131,8 +125,6 @@ h2 {
 /* Content wrapper pushes footer down */
 .wrapper {
     flex: 1;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 
@@ -145,7 +137,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* position: relative; */
     margin-top: auto;
 }
 
@@ -210,13 +201,6 @@ form {
     transform: scale(1.02);
     transition: 0.3s ease-in-out;
 }
-
-/* .form {
-    width: 100%;
-    margin: 3% auto;
-    box-shadow: var(--smal-box-shadow);
-    border-radius: 5px;
-} */
 
 
 /* Responsive adjustments */
