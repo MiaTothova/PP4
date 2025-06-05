@@ -14,7 +14,7 @@ def book_table(request):
             booking.user = request.user
             booking.save()
             messages.success(request, 'Your Booking has been successful!')
-            return redirect('home')
+            return redirect('view_bookings')
     else:
         form = BookingForm()
     return render(request, 'booking/create.html', {'form': form})
