@@ -50,7 +50,14 @@ def edit_booking(request, booking_id):
     else:
         form = BookingForm(instance=booking)
 
-    return render(request, 'booking/edit_booking.html', {'form': form, 'booking': booking})
+    return render(
+        request,
+        'booking/edit_booking.html',
+        {
+            'form': form,
+            'booking': booking
+        }
+    )
 
 
 @login_required
