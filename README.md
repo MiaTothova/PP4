@@ -22,13 +22,13 @@ am i responsive image -------
 
 ### Wireframes
 Web View
-[](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/wireframes/web.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/wireframes/web.png)
 
 Tablet View
-[](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/wireframes/tablet.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/wireframes/tablet.png)
 
 Mobile View
-[](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/wireframes/mobile.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/wireframes/mobile.png)
 
 
 
