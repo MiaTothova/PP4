@@ -1,3 +1,6 @@
+Introduction---------(overview)
+
+am i responsive image -------
 
 
 [Link to the live site.](https://pp4-2025-20f4ea33eee5.herokuapp.com/)
@@ -17,6 +20,30 @@
 10. As an admin, I want to see all booking reservations in my admin panel to manage them accordingly.
 11. As a user/regular customer I want to be able to make/ access my booking through my phone or tablet for convenience.
 
+### Wireframes
+
+
+
+## Agile Methodology
+The development of The Knife and Fork Steakhouse was managed using the Agile Methodology, with an emphasis on incremental progress and flexible planning. I used GitHub Issues to document all User Stories, each containing clear Acceptance Criteria and a list of tasks to complete.
+
+As I progressed through the project, some of the tasks and acceptance criteria were adjusted to better reflect the technical requirements and the reality of implementation. This was especially important in the early stages, as I was still learning how to approach problems using Django and Agile principles together.
+
+To help prioritize features, I applied the MoSCoW Method:
+* Must Have: Core features such as booking creation, user authentication, and viewing bookings.
+* Should Have: Useful features like editing and deleting bookings.
+* Could Have: Additional improvements such as styling tweaks and user notifications.
+* SWon’t Have: Optional features like email confirmations were left in the Backlog for future iterations.
+
+Although I didn’t work in fixed sprints, I used a Kanban-style board to manage my workflow. It was highly motivating to move tasks from "To Do" to "Done", and it helped me keep track of progress throughout the project.
+
+This was my first time applying Agile methodology to a Django project, and I found it incredibly helpful. It provided structure, improved time management, and gave me a clear sense of direction from start to finish.
+
+
+
+
+
+
 
 
 
@@ -29,3 +56,5 @@ Add manual testing code validations :
 []()
 []()
 []()
+
+User stories testing -------
