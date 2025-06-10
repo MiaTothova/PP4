@@ -21,6 +21,14 @@ am i responsive image -------
 11. As a user/regular customer I want to be able to make/ access my booking through my phone or tablet for convenience.
 
 ### Wireframes
+Web View
+[](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/wireframes/web.png)
+
+Tablet View
+[](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/wireframes/tablet.png)
+
+Mobile View
+[](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/wireframes/mobile.png)
 
 
 
