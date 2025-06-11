@@ -7,6 +7,11 @@ from .models import Booking
 
 
 def book_table(request):
+    """
+    Handle booking form submission and rendering.
+    If the request is POST, validate and save the booking form.
+    If the method is GET, renders a blank booking form.
+    """
     if request.method == "POST":
         form = BookingForm(request.POST)
         if form.is_valid():
@@ -21,25 +26,40 @@ def book_table(request):
 
 
 class Index(TemplateView):
+    """
+    Render the home page (index.html).
+    """
     template_name = 'booking/index.html'
 
 
 class Menu(TemplateView):
+    """
+    Render the menu page (menu.html).
+    """
     template_name = 'booking/menu.html'
 
 
 class Create(TemplateView):
+    """
+    Render the booking creation page.
+    """
     template_name = 'booking/create.html'
 
 
 @login_required
 def view_bookings(request):
+    """
+    Display all bookings made by the logged-in user.
+    """
     bookings = Booking.objects.filter(user=request.user).order_by('-date')
     return render(request, 'booking/view_booking.html', {'bookings': bookings})
 
 
 @login_required
 def edit_booking(request, booking_id):
+    """
+    Edit an existing booking for the logged-in user.
+    """
     booking = get_object_or_404(Booking, id=booking_id, user=request.user)
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)
@@ -62,6 +82,9 @@ def edit_booking(request, booking_id):
 
 @login_required
 def delete_booking(request, booking_id):
+    """
+    Delete a booking for the logged-in user.
+    """
     booking = get_object_or_404(Booking, id=booking_id, user=request.user)
 
     if request.method == 'POST':
