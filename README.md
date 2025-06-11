@@ -65,9 +65,25 @@ Pages tested:
 * Home, Menu, Book Now, My Bookings, Logout, Login, Register and Edit Booking. As the validation results were consistent across all pages, a single representative screenshot is included.
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/validators/html.png)
 
+#### CSS:
+CSS code was tested using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) by text input and by url. Both results were consistent.  
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/validators/css.png)
 
-[]()
-[]()
+#### Python:
+The Python code was tested using [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) to check for PEP8 compliance. Additionally, Flake8 was run in the terminal throughout development to identify and fix any formatting issues or unused imports. Both tools helped ensure the code followed clean, readable, and consistent Python style guidelines.
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/validators/flake8.png)
+
+#### Java Script:
+JavaScript code was tested using [JSHint](https://jshint.com/) to check for syntax errors and adherence to best practices. Minor adjustments, such as setting esversion: 6, were made to accommodate modern JavaScript features like const and let.
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/validators/js.png)
+
+#### Lighthouse:
+Lighthouse testing was performed using Chrome DevTools to evaluate performance, accessibility, best practices, and SEO across key pages. Results helped guide improvements to overall user experience and site efficiency.
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/validators/lighthouse.png)
+
+
+
+![]()
 []()
 []()
 []()
