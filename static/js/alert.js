@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+/* global bootstrap */
 document.addEventListener('DOMContentLoaded', function () {
   const alerts = document.querySelectorAll('.alert');
   alerts.forEach(function (alert) {

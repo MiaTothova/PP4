@@ -21,6 +21,8 @@ am i responsive image -------
 11. As a user/regular customer I want to be able to make/ access my booking through my phone or tablet for convenience.
 
 ### Wireframes
+Initial wireframes were sketched by hand using pen and paper. This approach helped me quickly brainstorm ideas, identify key components, and visualize the overall structure of the website. Once I had a clearer direction, I recreated the wireframes in Balsamiq to produce a more refined layout. During the design phase, some elements were modified to enhance usability and improve the overall user experience.
+
 Web View
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/wireframes/web.png)
 
@@ -56,9 +58,14 @@ This was my first time applying Agile methodology to a Django project, and I fou
 
 
 ## Testing
-Add manual testing code validations :
+### Code Validations :
+#### HTML:
+HTML code was tested using the [W3C Validator](https://validator.w3.org/) by text input. The HTML code was copied and pasted in from each page's source code from the live website. 
+Pages tested:
+* Home, Menu, Book Now, My Bookings, Logout, Login, Register and Edit Booking. As the validation results were consistent across all pages, a single representative screenshot is included.
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/validators/html.png)
 
-[]()
+
 []()
 []()
 []()
