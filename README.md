@@ -49,9 +49,12 @@ Although I didn’t work in fixed sprints, I used a Kanban-style board to manage
 
 This was my first time applying Agile methodology to a Django project, and I found it incredibly helpful. It provided structure, improved time management, and gave me a clear sense of direction from start to finish.
 
+### UX 
+#### Design
+#### color
 
-
-
+### Features
+### Future Features
 
 
 
@@ -82,10 +85,14 @@ Lighthouse testing was performed using Chrome DevTools to evaluate performance, 
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/validators/lighthouse.png)
 
 
-
-![]()
-[]()
-[]()
-[]()
-
 User stories testing -------
+
+### Bugs
+
+### Technologies Used
+
+### Deployment
+
+### Credits
+
+### Acknowledgements
