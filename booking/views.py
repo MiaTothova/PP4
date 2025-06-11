@@ -6,6 +6,7 @@ from .forms import BookingForm
 from .models import Booking
 
 
+@login_required
 def book_table(request):
     """
     Handle booking form submission and rendering.
