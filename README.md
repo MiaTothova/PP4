@@ -89,7 +89,7 @@ User stories testing -------
 
 ### Bugs
 
-### Technologies Used
+
 
 ## Deployment
 For good practice, this project was deployed early to [Heroku](https://www.heroku.com).
@@ -190,6 +190,31 @@ Once the deployment is successful, you’ll see a confirmation message in the bu
 6. Click View to open your live site in a new tab, or use the Open App button at the top of the dashboard.
 
 
+### Technologies Used
+
+#### Languages
+* HTML
+* CSS
+* Python
+* Java Script
+
+#### Tools
+* [GitHub](https://github.com/) - For repo creation and commiting my changes
+* [VSCode](https://code.visualstudio.com/) - Coding enviroment
+* [Heroku](https://www.heroku.com) - To host the website
+* [Bootstrap 4.6.2](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Responsive, mobile-fist design
+* [W3C Validator](https://validator.w3.org/) - HTML validation
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - CSS validation
+* [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) - Python validation 
+* [Flake 8](https://flake8.pycqa.org/en/latest/) - Python testing in the terminal
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Web Developer Tools
+* [TinyPNG](https://tinypng.com/) - Resize images
+* [Pexels](https://www.pexels.com/) - Free Images
+* [Coolors](https://coolors.co/) - Colour Palette Generator
+* [Google Fonts](https://fonts.google.com/) - Fonts
+* [Balsamiq](https://balsamiq.com/wireframes/) - Low Fidelity Wireframes
+* [ChatGPT](chatgpt.com) Used to generate landing page text and menu 
+* [FontAwesome](https://fontawesome.com/) - Navbar icon
 
 
 
