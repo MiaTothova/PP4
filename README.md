@@ -172,12 +172,22 @@ web: gunicorn your_project_name.wsgi
 * wsgi connects Django to the server.
 4. Save all changes and commit them before pushing to GitHub.
 
-#### Initial Deployment to Heroku
+### Initial Deployment to Heroku
 1. In Heroku, open your app and go to the Deploy tab.
 2. Under Deployment method, choose GitHub and connect your GitHub account if needed.
 3. Search for your project repository and click Connect.
 4. Click Deploy Branch to start the build process.
 5. Once complete, click Open App to view the live project. You should see Django’s default success page if everything worked correctly.
+
+### Final Deployment
+1. Before deploying the final version, make sure DEBUG is set to False in your settings.py file.
+If you used `DEBUG = 'DEVELOPMENT' in os.environ`, you can leave it as is since the env.py file is excluded from version control.
+2. Save, commit, and push your latest changes to your GitHub repository.
+3. Log in to Heroku, go to your project’s app, and open the Settings tab. Under Config Vars, remove the DISABLE_COLLECTSTATIC variable (if present).
+4. Go to the Deploy tab and scroll to the Deploy a GitHub branch section.
+5. Select the branch you want to deploy and click Deploy Branch.
+Once the deployment is successful, you’ll see a confirmation message in the build log.
+6. Click View to open your live site in a new tab, or use the Open App button at the top of the dashboard.
 
 
 
