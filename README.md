@@ -91,7 +91,100 @@ User stories testing -------
 
 ### Technologies Used
 
-### Deployment
+## Deployment
+For good practice, this project was deployed early to [Heroku](https://www.heroku.com).
+
+After installing Django and the necessary libraries, the base project was set up and the initial database migration was completed.
+
+By default, Django uses [db.sqlite3](https://docs.python.org/3/library/sqlite3.html), which is only available within the local development environment. To make the project work in a live production setting like Heroku, a more robust and accessible database is needed. Instead of using Heroku’s paid Postgres add-on, a free PostgreSQL database was set up using [CI Database](https://dbs.ci-dbs.net/), which works well for deployment purposes.
+### First Deployment:
+
+##### Create the Heroku App
+1. Login to Heroku and click on the top right button ‘New’ on the dashboard. 
+2. Click ‘Create new app’.
+3. Give your app a name and select the region closest to you. 
+4. Click on the ‘Create app’ button.
+
+#### Create the PostgreSQL Database
+1. Login to https://dbs.ci-dbs.net/.
+2. step 1: enter your email and submit.  
+3. step 2: creates a database.  
+4. step 3: receive the database link in your email.
+
+#### Create the env.py file
+After setting up the database, you need to connect it to your project. Some variables should be kept private and not uploaded to GitHub
+
+1. To keep sensitive variables hidden, create a file called env.py and add it to your .gitignore so it won’t be uploaded to GitHub.
+2. At the top of env.py, write import os, then set the DATABASE_URL variable like this:
+`os.environ["DATABASE_URL"] = "your_database_url"`
+3. Django also needs a SECRET_KEY variable for security. You can make one up or generate it using [MiniWebTool](https://miniwebtool.com/django-secret-key-generator/). Add it like this:
+`os.environ["SECRET_KEY"] = "your_secret_key"`
+
+#### settings.py
+To connect your Django project to the new PostgreSQL database and use the variables stored in env.py, follow these steps:
+1. In your settings.py file, make Django aware of your environment variables. Use this conditional import to avoid errors if env.py is missing:
+```
+import os
+import dj_database_url
+
+if os.path.isfile(‘env.py’):
+    import env
+```
+2. Replace Django’s default secret key with the one you defined in env.py by referencing the environment variable:
+```
+SECRET_KEY = os.environ.get(‘SECRET_KEY’)
+```
+3. Update the database configuration to use the external PostgreSQL database instead of the default sqlite3. Comment out the existing block and replace it with:
+```
+
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}
+```
+
+**NOTE**:  If you started the project using sqlite3, remember to add db.sqlite3 to your .gitignore so it doesn’t get pushed to GitHub.
+4. Once everything is set up, apply the database migrations to create the necessary tables:
+`python3 manage.py migrate`
+
+#### Link the Database to Heroku
+1. Go to the Heroku dashboard, select your app, and navigate to the Settings tab.
+2. Under Config Vars, click Reveal Config Vars and add a new variable:
+* DATABASE_URL with the value copied from your PostgreSQL database created on CI database.
+3. Add another variable:
+* SECRET_KEY using the same value set in your env.py file.
+4. If you're developing with Gitpod, add an additional variable:
+* PORT with the value 8000 (this ensures proper deployment).
+
+#### Add the Heroku Host Name
+In your settings.py file, find the ALLOWED_HOSTS list and add your Heroku app’s hostname. This is usually the name you gave the app followed by .herokuapp.com. You should also add 'localhost' so the app can run locally during development:
+```
+ALLOWED_HOSTS = [‘heroku-app-name.herokuapp.com’, ‘localhost’]
+```
+#### Set Up Static, Media, and Procfile
+1. At the root of your project (next to manage.py), create folders for static, media, and templates.
+2. In the same directory, create a new file named Procfile (capital "P", no file extension).
+3. Add the following line to tell Heroku how to run your app (replace your_project_name with your actual project folder name):
+```
+web: gunicorn your_project_name.wsgi
+```
+* web tells Heroku to handle web traffic.
+* gunicorn is the WSGI HTTP server used in production.
+* wsgi connects Django to the server.
+4. Save all changes and commit them before pushing to GitHub.
+
+#### Initial Deployment to Heroku
+1. In Heroku, open your app and go to the Deploy tab.
+2. Under Deployment method, choose GitHub and connect your GitHub account if needed.
+3. Search for your project repository and click Connect.
+4. Click Deploy Branch to start the build process.
+5. Once complete, click Open App to view the live project. You should see Django’s default success page if everything worked correctly.
+
+
+
+
+
+
+
 
 ### Credits
 
