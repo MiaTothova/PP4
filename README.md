@@ -5,7 +5,7 @@ am i responsive image -------
 
 [Link to the live site.](https://pp4-2025-20f4ea33eee5.herokuapp.com/)
 
-# Design & Planning:
+# UX / Design & Planning :
 
 ## User Stories
 1. As a guest, I want to browse the website easily through navbar options. So that I can see the menu and decide if I want to register.[#1](https://github.com/users/MiaTothova/projects/5?pane=issue&itemId=98547855&issue=MiaTothova%7CPP4%7C1)
@@ -32,8 +32,6 @@ Tablet View
 Mobile View
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/wireframes/mobile.png)
 
-
-
 ## Agile Methodology
 The development of The Knife and Fork Steakhouse was managed using the Agile Methodology, with an emphasis on incremental progress and flexible planning. I used GitHub Issues to document all User Stories, each containing clear Acceptance Criteria and a list of tasks to complete.
 
@@ -49,9 +47,40 @@ Although I didn’t work in fixed sprints, I used a Kanban-style board to manage
 
 This was my first time applying Agile methodology to a Django project, and I found it incredibly helpful. It provided structure, improved time management, and gave me a clear sense of direction from start to finish.
 
-### UX 
 #### Design
-#### color
+The Fork and Knife Steakhouse website is built with a focus on clean design and consistent structure across all pages. It is fully responsive and adjusts seamlessly to screen sizes ranging from 320px (mobile) to 2560px (large desktop).
+
+The navigation bar is accessible on every page and features the restaurant logo along with clearly labeled links to the Homepage, Menu, Bookings, and user authentication options (Register, Login, or Logout). On smaller screens, a hamburger menu appears to ensure a clutter-free layout and ease of use.
+
+The footer is also consistent throughout the site, providing quick access to social media links (which open in new tabs). This ensures that users can easily get in touch or stay connected.
+
+The Home Page acts as the entry point to the site, welcoming users with a large hero section featuring the restaurant’s name and buttons to direct users to the menu or booking pages. An “About” section further introduces the restaurant’s story and values.
+
+The Menu Page categorizes dishes for easy browsing, such as Starters, Mains, Desserts, and Beverages.
+
+User authentication pages (registration and login) are styled to be simple and familiar, ensuring an easy onboarding process. These are accessible via the navbar and behave predictably on all devices.
+
+Finally, the Book Now and My Bookings pages are reserved for logged-in users. These pages provide full CRUD functionality, allowing users to create, view, edit, or cancel their table reservations in a user-friendly environment.
+
+#### Typography
+The website uses the Poppins font from Google Fonts throughout all pages. It’s a clean, modern sans-serif font that improves readability and gives a stylish and professional look across devices.
+
+#### Colour Scheme
+
+| Colour Use            | Hex Code   | Description                                      |
+|-----------------------|------------|--------------------------------------------------|
+| Primary Accent        | `#8b0000`  | Deep red used for headings, buttons, and highlights |
+| Button Gradient       | `#8b0000 → #ff4500` | Gradient for call-to-action buttons    |
+| Background            | `#f7d9bf`  | Soft peach for a warm and inviting background    |
+| Header/Footer Text    | `#ffffff`  | Clean white used for text contrast               |
+| Body Text             | `#333333`  | Dark grey for easy readability                   |
+| Hover Highlight       | `#f39c12`  | Orange/yellow used for interactive effects       |
+
+This colour palette was chosen to reflect the warmth and boldness of a steakhouse brand while keeping it elegant and user-friendly.
+
+This colour pallete was used as a inspiration:
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/color.png)
+
 
 ### Features
 ### Future Features
