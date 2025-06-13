@@ -88,51 +88,51 @@ Lighthouse testing was performed using Chrome DevTools to evaluate performance, 
 #### User stories testing 
 
 1. As a guest, I want to browse the website easily through navbar options. So that I can see the menu and decide if I want to register.[#1](https://github.com/users/MiaTothova/projects/5?pane=issue&itemId=98547855&issue=MiaTothova%7CPP4%7C1)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/#1.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%231.png)
 * As shown in the image, the navigation menu is clearly visible, allowing the user to easily identify and choose their desired action.
 
 2. As a user, I want to register an account so I can make a restaurant booking.[#2](https://github.com/users/MiaTothova/projects/5/views/1?pane=issue&itemId=98547856&issue=MiaTothova%7CPP4%7C2)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/#2.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%232.png)
 * When users navigate to the registration page, they are presented with a form where they can choose a username, enter their email and password, and click the "Sign Up" button to register.
 
 3. As a logged in user, I want to be able to make a booking at the restaurant.[#3](https://github.com/users/MiaTothova/projects/5/views/1?pane=issue&itemId=98547858&issue=MiaTothova%7CPP4%7C3)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/#3.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%233.png)
 * When logged-in users navigate to the Book Now page, they are presented with a booking form. They enter their name, email, date, time, and number of guests, then click the Book Now button to confirm their reservation.
 
 4. As a user, I want login and logout successfully when I need to so that I can manage my bookings.[#4](https://github.com/users/MiaTothova/projects/5/views/1?pane=issue&itemId=98547860&issue=MiaTothova%7CPP4%7C4)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/#4.png)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/#4-logout.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%234.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%234-logout.png)
 * When a registered user wants to log in, they are presented with a simple form. They enter their username and password, then click the Sign In button to access their account.
 * When the user is finished, they can easily sign out by navigating to the logout page and clicking the Sign Out button.
 
 5. As an admin, I want to view all customer bookings, so that I can manage reservations effectively.[#5](https://github.com/users/MiaTothova/projects/5/views/1?pane=issue&itemId=98728716&issue=MiaTothova%7CPP4%7C5)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/#5.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%235.png)
 * When the admin accesses the Bookings section, they are presented with a list of current bookings, allowing them to manage and update each entry as needed.
 
 6. As an admin, I want to manage user accounts and have all their information visible to me so that I can contact them if necessary.[#6](https://github.com/users/MiaTothova/projects/5/views/1?pane=issue&itemId=98730100&issue=MiaTothova%7CPP4%7C6)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/#6.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%236.png)
 * When the admin navigates to the Users section, they are presented with a list of all currently registered users and can manage their information as needed.
 
 7. As a user, I want to see an easy-to-understand website so that I can make conscious selections.[#7](https://github.com/users/MiaTothova/projects/5/views/1?pane=issue&itemId=98737167&issue=MiaTothova%7CPP4%7C7)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/#7.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%237.png)
 * The layout of the website is simple and intuitive. The logo and restaurant name are prominently displayed, the navigation bar is easy to read, and key sections like the About area and footer are clearly visible. Users can quickly understand where to go based on their needs.
 
 8. As a logged-in user, I want to see all my upcoming reservations.[#8](https://github.com/users/MiaTothova/projects/5/views/1?pane=issue&itemId=99013887&issue=MiaTothova%7CPP4%7C8)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/#8.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%238.png)
 * When users navigate to the My Bookings page, they can clearly view all their reservations. From this page, they have the option to edit or cancel any booking as needed.
 
 9. As a logged-in user, I want to cancel any of my upcoming bookings if my plans change.[#9](https://github.com/users/MiaTothova/projects/5/views/1?pane=issue&itemId=99013888&issue=MiaTothova%7CPP4%7C9)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/#9.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%239.png)
 * From the My Bookings page, users can select which reservation they wish to cancel. They are then presented with a confirmation prompt asking if they are sure they want to proceed or return to the My Bookings page.
 * Upon cancellation, a Bootstrap alert notifies the user that their booking has been successfully cancelled. To improve the user experience, I added a small JavaScript function that automatically dismisses the alert after 3 seconds, eliminating the need for users to manually close it each time—helping to keep interactions smooth and less disruptive.
 
 10. As an admin, I want to see all booking reservations in my admin panel to manage them accordingly.[#10](https://github.com/users/MiaTothova/projects/5/views/1?pane=issue&itemId=99013889&issue=MiaTothova%7CPP4%7C10)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/#5.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%235.png)
 * Same as in User story no.5, When the admin accesses the Bookings section, they are presented with a list of current bookings, allowing them to manage and update each entry as needed.
 
 11. As a user/regular customer I want to be able to make/ access my booking through my phone or tablet for convenience.[#12](https://github.com/users/MiaTothova/projects/5/views/1?pane=issue&itemId=99013996&issue=MiaTothova%7CPP4%7C12)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/#11-phone.png)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/#11-tablet.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%2311-phone.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%2311-tablet.png)
 * I tested the My Bookings page on both mobile and tablet devices, and in each case, the user was able to access and view their bookings without any issues.
 
 
