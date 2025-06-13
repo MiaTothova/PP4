@@ -84,8 +84,19 @@ JavaScript code was tested using [JSHint](https://jshint.com/) to check for synt
 Lighthouse testing was performed using Chrome DevTools to evaluate performance, accessibility, best practices, and SEO across key pages. Results helped guide improvements to overall user experience and site efficiency.
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/validators/lighthouse.png)
 
+#### responsivness Testing
+The website is fully responsive across a wide range of screen sizes, from a minimum width of 320px to a maximum of 2560px. Friends and family tested the site on various devices, including phones and tablets, and reported no issues with layout or usability. Additional manual testing was carried out using [Chrome's DevTools](https://websiteresponsivetest.com/) to simulate different screen resolutions and ensure consistent responsiveness throughout.
 
-#### User stories testing 
+#### Browser Compatibility Testing
+The website was tested across all major browsers and passed compatibility checks without any issues. The layout, functionality, and responsiveness remained consistent on the following browsers:
+* Google Chrome
+* Mozilla Firefox
+* Microsoft Edge
+* Safari
+* Opera
+All core features, including navigation, form handling, and responsiveness, performed as expected across each browser.
+
+### User stories testing 
 
 1. As a guest, I want to browse the website easily through navbar options. So that I can see the menu and decide if I want to register.[#1](https://github.com/users/MiaTothova/projects/5?pane=issue&itemId=98547855&issue=MiaTothova%7CPP4%7C1)
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%231.png)
