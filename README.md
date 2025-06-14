@@ -2,7 +2,7 @@
 The Fork and Knife Steakhouse is a fictional, full-stack web application built for a premium dining experience. Designed with a focus on user convenience and elegant simplicity, the site aims to showcase the restaurant’s brand, enable smooth online reservations, and enhance customer engagement.
 
 [Link to the live site.](https://pp4-2025-20f4ea33eee5.herokuapp.com/)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/wireframes/responsive.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/responsive.png)
 
 # UX / Design & Planning :
 
@@ -166,9 +166,14 @@ All these actions are protected behind user authentication to ensure data privac
 
 
 ### Future Features
-
-
-
+* Email and SMS Booking Confirmations - 
+Automatically send booking confirmation and reminders to users after a reservation is made.
+* Edit User Profile - 
+Enable users to update their personal information (e.g., name, email, password) through a profile page.
+* Special Events and Promotions -
+A section for the restaurant to post upcoming events, limited-time menus, or discount offers.
+* Newsletter Integration - 
+Let users subscribe to receive news, offers, and updates via email.
 
 
 ## Testing
@@ -253,8 +258,8 @@ All core features, including navigation, form handling, and responsiveness, perf
 * Same as in User story no.5, When the admin accesses the Bookings section, they are presented with a list of current bookings, allowing them to manage and update each entry as needed.
 
 11. As a user/regular customer I want to be able to make/ access my booking through my phone or tablet for convenience.[#12](https://github.com/users/MiaTothova/projects/5/views/1?pane=issue&itemId=99013996&issue=MiaTothova%7CPP4%7C12)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%2311-phone.png)
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%2311-tablet.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/%2311-phone.png)
 * I tested the My Bookings page on both mobile and tablet devices, and in each case, the user was able to access and view their bookings without any issues.
 
 
@@ -388,6 +393,17 @@ Once the deployment is successful, you’ll see a confirmation message in the bu
 * [ChatGPT](chatgpt.com) Used to generate landing page text and menu 
 * [FontAwesome](https://fontawesome.com/) - Navbar icon
 
+#### Libraries & Frameworks
+
+* [Django 3.2.18](https://www.djangoproject.com/) - A high-level, open-source Python web framework that promotes rapid development and clean design.
+* [Gunicorn 20.1.0](https://gunicorn.org/) - A Python WSGI HTTP server used to deploy the Django application on Heroku.
+* [PostgreSQL 0.5.0](https://www.postgresql.org/) - A robust, open-source object-relational database system used for data storage.
+* [Pyscopg2 2.9.5](https://www.psycopg.org/docs/) - A PostgreSQL adapter for Python, allowing communication between Django and the PostgreSQL database.
+* [Heroku](https://www.heroku.com) - A cloud platform used for deploying, managing, and scaling the web application.
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) -  A Django package that provides a full suite of authentication, registration, and account management features.
+* [Bootstrap 4.6.2](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - A front-end framework used for building responsive and mobile-first web pages.
+* [whitenoise==5.3.0](https://whitenoise.readthedocs.io/en/latest/) - Used to efficiently serve static files directly from the Django app, especially in production.
+* [sqlparse==0.5.0](https://pypi.org/project/sqlparse/) - A Python library for parsing and formatting SQL statements.
 
 ### Credits
 
