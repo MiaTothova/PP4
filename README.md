@@ -1,11 +1,27 @@
-Introduction---------(overview)
-
-am i responsive image -------
-
+# Project Overview
+The Fork and Knife Steakhouse is a fictional, full-stack web application built for a premium dining experience. Designed with a focus on user convenience and elegant simplicity, the site aims to showcase the restaurant’s brand, enable smooth online reservations, and enhance customer engagement.
 
 [Link to the live site.](https://pp4-2025-20f4ea33eee5.herokuapp.com/)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/validators/lighthouse.png)
+
 
 # UX / Design & Planning :
+
+## Site Goals
+
+* Provide a visually appealing and user-friendly platform for potential customers.
+* Allow guests to browse the menu, register an account, and book a table effortlessly.
+* Enable authenticated users to view, edit, and cancel their reservations.
+* Support restaurant staff with an admin interface to manage bookings and customer interactions.
+
+## Target Users
+
+* New and returning customers looking to reserve a table at the steakhouse.
+* Guests browsing the menu before dining in.
+* Authenticated users who wish to manage their bookings online.
+* Restaurant management accessing the admin dashboard to handle reservations efficiently.
+
+This application is built with a mobile-first, responsive design to ensure a seamless experience across all devices—from smartphones to desktops—making fine dining just a few clicks away.
 
 ## User Stories
 1. As a guest, I want to browse the website easily through navbar options. So that I can see the menu and decide if I want to register.[#1](https://github.com/users/MiaTothova/projects/5?pane=issue&itemId=98547855&issue=MiaTothova%7CPP4%7C1)
@@ -47,7 +63,7 @@ Although I didn’t work in fixed sprints, I used a Kanban-style board to manage
 
 This was my first time applying Agile methodology to a Django project, and I found it incredibly helpful. It provided structure, improved time management, and gave me a clear sense of direction from start to finish.
 
-#### Design
+### Design
 The Fork and Knife Steakhouse website is built with a focus on clean design and consistent structure across all pages. It is fully responsive and adjusts seamlessly to screen sizes ranging from 320px (mobile) to 2560px (large desktop).
 
 The navigation bar is accessible on every page and features the restaurant logo along with clearly labeled links to the Homepage, Menu, Bookings, and user authentication options (Register, Login, or Logout). On smaller screens, a hamburger menu appears to ensure a clutter-free layout and ease of use.
@@ -62,10 +78,10 @@ User authentication pages (registration and login) are styled to be simple and f
 
 Finally, the Book Now and My Bookings pages are reserved for logged-in users. These pages provide full CRUD functionality, allowing users to create, view, edit, or cancel their table reservations in a user-friendly environment.
 
-#### Typography
+### Typography
 The website uses the Poppins font from Google Fonts throughout all pages. It’s a clean, modern sans-serif font that improves readability and gives a stylish and professional look across devices.
 
-#### Colour Scheme
+### Colour Scheme
 
 | Colour Use            | Hex Code   | Description                                      |
 |-----------------------|------------|--------------------------------------------------|
@@ -82,54 +98,54 @@ This colour pallete was used as a inspiration:
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/color.png)
 
 
-### Features
+## Features
 
-#### Header and Navigation
+### Header and Navigation
 * A responsive navigation bar is displayed across all pages. It updates dynamically based on user login status, showing options like "Register" and "Login" for guests, and "Book Now", "My Bookings", and "Logout" for authenticated users. On mobile devices, the navigation menu collapses into a hamburger icon for better accessibility.
 
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/nav.png)
 
-#### Home page
+### Home page
 The home page serves as the main entry point to the site and clearly communicates the restaurant’s identity and purpose. It features a carousel with three hero image slides, each promoting the atmosphere and offerings of the restaurant. Below the carousel is an About section that shares the story of the restaurant and its values, helping users connect with the brand
 
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/home.png)
 
-#### Footer
+### Footer
 Displayed on all pages, the footer contains the restaurant’s social media links that open in new tabs, and a clean layout that ensures consistency across the site.
 
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/footer.png)
 
-#### Menu page
+### Menu page
 Lists the restaurant’s dishes in categories such as Starters, Mains, Desserts, and Drinks. Each section is styled for readability and consistency.
 
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/menu.png)
 
-#### Register page
+### Register page
 Allows new users to sign up using a simple form powered by Django Allauth. The form includes username, email, and password fields, styled to match the overall design of the site.
 
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/.png)
 
-#### Login
+### Login
 Provides a secure login form for returning users. Once logged in, users are redirected to the homepage, with their navigation links updated accordingly.
 
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/.png)
 
-##### Logout 
+#### Logout 
 A simple logout confirmation page that signs users out securely and updates the navbar to reflect their logged-out status.
 
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/logout.png)
 
-#### Book Now
+### Book Now
 Authenticated users can access a booking form to reserve a table. The form includes name, email, date, time, and guest number.
 
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/book-now.png)
 
-#### My Bookings
+### My Bookings
 Authenticated users can view, edit, or cancel their reservations. Each booking is displayed with key details like date, time and guest count. Update and Cancel actions are available per booking.
 
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/bookings.png)
 
-#### Admin Panel
+### Admin Panel
 Accessible only by superusers. The admin panel provides full CRUD control over bookings, users, and any registered models. It uses Django’s built-in admin interface and supports filtering, searching, and inline editing.
 Admins can:
 * Create new bookings or users
@@ -140,7 +156,7 @@ It provides full control over the data and uses built-in Django features like fi
 
 ![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/admin.png)
 
-#### CRUD Functionality 
+### CRUD Functionality 
 The site implements full CRUD operations for the Booking model:
 * Create: Users can make new bookings.
 * Read: View bookings on the "My Bookings" page.
