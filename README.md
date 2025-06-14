@@ -83,6 +83,73 @@ This colour pallete was used as a inspiration:
 
 
 ### Features
+
+#### Header and Navigation
+* A responsive navigation bar is displayed across all pages. It updates dynamically based on user login status, showing options like "Register" and "Login" for guests, and "Book Now", "My Bookings", and "Logout" for authenticated users. On mobile devices, the navigation menu collapses into a hamburger icon for better accessibility.
+
+![](nav)
+
+#### Home page
+The home page serves as the main entry point to the site and clearly communicates the restaurant’s identity and purpose. It features a carousel with three hero image slides, each promoting the atmosphere and offerings of the restaurant. Below the carousel is an About section that shares the story of the restaurant and its values, helping users connect with the brand
+
+![](home)
+
+#### Footer
+Displayed on all pages, the footer contains the restaurant’s social media links that open in new tabs, and a clean layout that ensures consistency across the site.
+
+![]()
+
+#### Menu page
+Lists the restaurant’s dishes in categories such as Starters, Mains, Desserts, and Drinks. Each section is styled for readability and consistency.
+
+![]()
+
+#### Register page
+Allows new users to sign up using a simple form powered by Django Allauth. The form includes username, email, and password fields, styled to match the overall design of the site.
+
+![]()
+
+#### Login
+Provides a secure login form for returning users. Once logged in, users are redirected to the homepage, with their navigation links updated accordingly.
+
+![]()
+
+##### Logout 
+A simple logout confirmation page that signs users out securely and updates the navbar to reflect their logged-out status.
+
+![]()
+
+#### Book Now
+Authenticated users can access a booking form to reserve a table. The form includes name, email, date, time, and guest number.
+
+![]()
+
+#### My Bookings
+Authenticated users can view, edit, or cancel their reservations. Each booking is displayed with key details like date, time and guest count. Update and Cancel actions are available per booking.
+
+![]()
+
+#### Admin Panel
+Accessible only by superusers. The admin panel provides full CRUD control over bookings, users, and any registered models. It uses Django’s built-in admin interface and supports filtering, searching, and inline editing.
+Admins can:
+* Create new bookings or users
+* Read booking and user data
+* Update any entry
+* Delete records as needed
+It provides full control over the data and uses built-in Django features like filtering and search.
+
+![]()
+
+#### CRUD Functionality 
+The site implements full CRUD operations for the Booking model:
+* Create: Users can make new bookings.
+* Read: View bookings on the "My Bookings" page.
+* Update: Modify existing bookings.
+* Delete: Cancel a booking.
+All these actions are protected behind user authentication to ensure data privacy and security.
+
+
+
 ### Future Features
 
 
