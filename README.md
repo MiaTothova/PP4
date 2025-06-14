@@ -2,8 +2,7 @@
 The Fork and Knife Steakhouse is a fictional, full-stack web application built for a premium dining experience. Designed with a focus on user convenience and elegant simplicity, the site aims to showcase the restaurant’s brand, enable smooth online reservations, and enhance customer engagement.
 
 [Link to the live site.](https://pp4-2025-20f4ea33eee5.herokuapp.com/)
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/validators/lighthouse.png)
-
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/wireframes/responsive.png)
 
 # UX / Design & Planning :
 
@@ -123,12 +122,12 @@ Lists the restaurant’s dishes in categories such as Starters, Mains, Desserts,
 ### Register page
 Allows new users to sign up using a simple form powered by Django Allauth. The form includes username, email, and password fields, styled to match the overall design of the site.
 
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/reg.png)
 
 ### Login
 Provides a secure login form for returning users. Once logged in, users are redirected to the homepage, with their navigation links updated accordingly.
 
-![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/.png)
+![](https://github.com/MiaTothova/PP4/blob/main/Readme-documentation/signin.png)
 
 #### Logout 
 A simple logout confirmation page that signs users out securely and updates the navbar to reflect their logged-out status.
