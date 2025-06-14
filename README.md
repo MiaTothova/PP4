@@ -264,8 +264,23 @@ All core features, including navigation, form handling, and responsiveness, perf
 
 
 
-### Bugs
+### known Bugs and Issues
 
+* Date and Time Validation on Booking Form :
+Due to limited time and the need to focus on finalizing the README before resubmission, full validation for the booking date and time has not yet been implemented.
+While the form remains functional and allows users to submit bookings, the lack of proper validation can affect the user experience by allowing bookings for past dates or outside intended operating hours. This does not break the application but is something that should be addressed in future development to ensure accurate and user-friendly input handling.
+
+* Bootstrap Alerts Auto-Close:
+Bootstrap alerts used to require manual dismissal. This was improved by implementing a JavaScript function that auto-dismisses alerts after 3 seconds for a smoother user experience.
+
+* Minor Mobile Layout Adjustments:
+Some UI elements such as forms and text spacing needed extra styling for smaller screens. Media queries were added to resolve layout inconsistencies.
+
+* Heroku 504 Gateway Timeout:
+A temporary timeout occurred during login or page load, likely related to Heroku’s connection through CloudFront. No changes were needed in the application code.
+
+* JavaScript Warnings:
+JSHint initially reported ES6 syntax and undefined global variables like bootstrap. These were resolved by updating JSHint settings and explicitly declaring global variables where necessary.
 
 
 ## Deployment
