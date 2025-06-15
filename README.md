@@ -422,4 +422,19 @@ Once the deployment is successful, you’ll see a confirmation message in the bu
 
 ### Credits
 
+The following walkthroughs were key in helping me understand the concepts needed to build this project. While I did not copy any code directly, I adapted and customized various sections to suit the specific needs of my website. The foundation of the project was largely based on the two blog tutorials listed below.
+* Code Institute's "I Think Therefore I Am Blog" tutorial.
+* [Python Django Tutorials](https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p)
+* Dee Mc's [Django Tutorial On How To Create A Recipe blog](https://tinyurl.com/mrx7jbjt) 
+* [Django Documentation](https://docs.djangoproject.com/en/3.2/)
+* [Bootstrap Documentation](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/)
+* Slack community [Slack members](https://app.slack.com/)
+
 ### Acknowledgements
+
+I would like to extend my sincere thanks to my mentor, Rory Patrick Sheridan, for his clear guidance and huge support throughout this project. His insightful explanations greatly enhanced my understanding, particularly in the implementation of custom models, and played a key role in my overall development.
+
+Special thanks also to Roman for his occasional but timely assistance during development. His input was valuable when I needed a second opinion or quick clarification.
+
+Finally, I’d like to thank Sarah Collins for her help and clarifications during the resubmission process. Her support was much appreciated during a crucial stage of the project.
