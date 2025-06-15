@@ -58,24 +58,24 @@ To help prioritize features, I applied the MoSCoW Method:
 * Could Have: Additional improvements such as styling tweaks and user notifications.
 * SWon’t Have: Optional features like email confirmations were left in the Backlog for future iterations.
 
-Although I didn’t work in fixed sprints, I used a Kanban-style board to manage my workflow. It was highly motivating to move tasks from "To Do" to "Done", and it helped me keep track of progress throughout the project.
+Although I didn’t work in fixed sprints, I used a [Kanban-style board](https://github.com/users/MiaTothova/projects/5/views/1) to manage my workflow. It was highly motivating to move tasks from "To Do" to "Done", and it helped me keep track of progress throughout the project.
 
 This was my first time applying Agile methodology to a Django project, and I found it incredibly helpful. It provided structure, improved time management, and gave me a clear sense of direction from start to finish.
 
 ### Design
-The Fork and Knife Steakhouse website is built with a focus on clean design and consistent structure across all pages. It is fully responsive and adjusts seamlessly to screen sizes ranging from 320px (mobile) to 2560px (large desktop).
+* The Fork and Knife Steakhouse website is built with a focus on clean design and consistent structure across all pages. It is fully responsive and adjusts seamlessly to screen sizes ranging from 320px (mobile) to 2560px (large desktop).
 
-The navigation bar is accessible on every page and features the restaurant logo along with clearly labeled links to the Homepage, Menu, Bookings, and user authentication options (Register, Login, or Logout). On smaller screens, a hamburger menu appears to ensure a clutter-free layout and ease of use.
+* The navigation bar is accessible on every page and features the restaurant logo along with clearly labeled links to the Homepage, Menu, Bookings, and user authentication options (Register, Login, or Logout). On smaller screens, a hamburger menu appears to ensure a clutter-free layout and ease of use.
 
-The footer is also consistent throughout the site, providing quick access to social media links (which open in new tabs). This ensures that users can easily get in touch or stay connected.
+* The footer is also consistent throughout the site, providing quick access to social media links (which open in new tabs). This ensures that users can easily get in touch or stay connected.
 
-The Home Page acts as the entry point to the site, welcoming users with a large hero section featuring the restaurant’s name and buttons to direct users to the menu or booking pages. An “About” section further introduces the restaurant’s story and values.
+* The Home Page acts as the entry point to the site, welcoming users with a large hero section featuring the restaurant’s name and buttons to direct users to the menu or booking pages. An “About” section further introduces the restaurant’s story and values.
 
-The Menu Page categorizes dishes for easy browsing, such as Starters, Mains, Desserts, and Beverages.
+* The Menu Page categorizes dishes for easy browsing, such as Starters, Mains, Desserts, and Beverages.
 
-User authentication pages (registration and login) are styled to be simple and familiar, ensuring an easy onboarding process. These are accessible via the navbar and behave predictably on all devices.
+* User authentication pages (registration and login) are styled to be simple and familiar, ensuring an easy onboarding process. These are accessible via the navbar and behave predictably on all devices.
 
-Finally, the Book Now and My Bookings pages are reserved for logged-in users. These pages provide full CRUD functionality, allowing users to create, view, edit, or cancel their table reservations in a user-friendly environment.
+* Finally, the Book Now and My Bookings pages are reserved for logged-in users. These pages provide full CRUD functionality, allowing users to create, view, edit, or cancel their table reservations in a user-friendly environment.
 
 ### Typography
 The website uses the Poppins font from Google Fonts throughout all pages. It’s a clean, modern sans-serif font that improves readability and gives a stylish and professional look across devices.
@@ -162,7 +162,6 @@ The site implements full CRUD operations for the Booking model:
 * Update: Modify existing bookings.
 * Delete: Cancel a booking.
 All these actions are protected behind user authentication to ensure data privacy and security.
-
 
 
 ### Future Features
